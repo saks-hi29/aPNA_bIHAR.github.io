@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>अपना Bihar</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/download.jpg" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="toursim.html" class="nav-link">Toursim </a>
+          <a href="pol.html" class="nav-link"> Politcs </a>
+          <a href="his.html" class="nav-link"> History </a>
+          <a href="geo.html" class="nav-link"> Geography </a>
+          <a href="eco.html" class="nav-link"> Economy </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- main -->
+    <main class="page">
+      
+      <div class="slideshow-container">
+     
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/bihar.jpeg" style="width:110%" class="img front-img">
+          <div class="text"><marquee width="60%" direction="left" height="200px">
+            जहाँ प्रेम से काट देते हैं पहाड़ , वही तो है अपना Bihar
+            </marquee></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/h4.jpg" style="max-width:100%" class="img front-img">
+          <div class="text"><marquee width="60%" direction="left" height="100px">
+            जहाँ प्रेम से काट देते हैं पहाड़ , वही तो है अपना Bihar
+            </marquee></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/language.jpg" style="width:100%" class="img front-img">
+          <div class="text"> 
+            <marquee width="60%" direction="left" height="100px">
+              जहाँ प्रेम से काट देते हैं पहाड़ , वही तो है अपना Bihar
+              </marquee>
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+      <section class="recipes-container">
+        <!-- tag container -->
+        <div class="tags-container">
+         <h4>Districts of bihar</h4>
+         <p>Patna</p>
+         <p>Bhagalpur</p>
+         <p>Kathiar</p>
+         <p>Purnia</p>
+
+                  <p>jvhb</p>
+
+         
+        </div>
+        <div class="recipes-list">
+        
+          <a href="tradtion.html" class="recipe">
+            <img src="./assets/tryme.jpg" class="img recipe-img" alt="" />
+            <h5>Tradition</h5>
+            <p>
+              The traditional dress of Bihari people consists of dhoti-kurta for
+              men and saree for women.
+            </p>
+          </a>
+
+          <a href="festival.html" class="recipe">
+            <img
+              src="./assets/festivalpng.webp"
+              class="img recipe-img"
+              alt=""
+            />
+            <h5>Festival</h5>
+            <p>
+              Chhath puja is the most famous and original celebrated festival
+              among the many fairs and festivals of Bihar. It is an ancient
+              Hindu festival in the worship of 'Surya', the sun deity
+            </p>
+          </a>
+
+          <a href="food.html" class="recipe">
+            <img src="./assets/food.jpg" class="img recipe-img" alt="" />
+            <h5>Cuisine</h5>
+            <p>
+              Litti Chokha, a baked salted wheat-flour cake filled with sattu
+              (baked chickpea flour) and some special spices, which is served
+              with baigan bharta, made of roasted eggplant (brinjal) and
+              tomatoes.
+            </p>
+          </a>
+
+          <a href="temple.html" class="recipe">
+            <img src="./assets/me.jpg" class="img recipe-img" alt="" />
+            <h5>Temples</h5>
+            <p>
+              The Bihar Temples are Known for architectural brilliance made by
+              by differnt emperors and kings in different eras.
+            </p>
+          </a>
+
+          <a href="art.html" class="recipe">
+            <img src="./assets/art.jpg" class="img recipe-img" alt="" />
+            <h5>Art forms</h5>
+            <p>
+              Tikuli is a type of hand painting and its history spread over 800
+              years. The painting with its modern evolution and varied
+              manifestations, find its origin in Patna, Bihar.
+            </p>
+          </a>
+          <a href="language.html" class="recipe">
+            <img src="./assets/language.jpg" class="img recipe-img" alt="" />
+            <h5>Language</h5>
+            <p>
+              There are many languages spoken in Bihar.Out of all chief among
+              them are Bhojpuri, spoken in the west of the state, Maithili in
+              the north, and Magahi in the south..
+            </p>
+          </a>
+        </div>
+
+
+       
+          
+      </section>
+    </main>
+    <!-- end of main -->
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo"> अपना Bihar</span> Made by Sakshi
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

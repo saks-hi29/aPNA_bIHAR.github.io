@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>अपना Bihar</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/fav.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/download.jpg" alt="simply recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> Home </a>
+          <a href="toursim.html" class="nav-link">Toursim </a>
+          <a href="pol.html" class="nav-link"> Politcs </a>
+          <a href="his.html" class="nav-link"> History </a>
+          <a href="geo.html" class="nav-link"> Geography </a>
+          <a href="eco.html" class="nav-link"> Economy </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <section class="contact-container">
+        <article class="contact-info">
+          <h3>Why This ?</h3>
+          <p>
+            Being an army brat ,moving different places in every 2 years with my
+            dad i never get a lot of chances to visit my hometown but i always
+            miss my place.Whenever i hear my parents talkikng about the legacy
+            of the sate and their memories in that place i always feel that
+            something is missing from my side. Therefore when in summer vactions
+            i get chance to learn web development ai decided to make this as my
+            first project.
+          </p>
+          <p>It allows me to combine my passion for coding and design with my desire to showcase my Stae and its beauty.</p>
+        
+        </article>
+        <article>
+          <form class="form contact-form">
+            <div class="form-row">
+              <label html="name" class="form-label">your name</label>
+              <input type="text" name="name" id="name" class="form-input" />
+            </div>
+            <div class="form-row">
+              <label html="email" class="form-label">your email</label>
+              <input type="text" name="email" id="email" class="form-input" />
+            </div>
+            <div class="form-row">
+              <label html="message" class="form-label">message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-textarea"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-block">submit</button>
+          </form>
+        </article>
+      </section>
+      <section class="featured-recipes">
+        <h5 class="featured-title">Look At This Awesomesouce!</h5>
+        <div class="recipes-list">
+          
+            <a href="temple.html" class="recipe">
+              <img src="./assets/me.jpg" class="img recipe-img" alt="" />
+              <h5>Temples</h5>
+              <p>
+                The Bihar Temples are Known for architectural brilliance made by
+                by differnt emperors and kings in different eras.
+              </p>
+            </a>
+  
+            <a href="art.html" class="recipe">
+              <img src="./assets/art.jpg" class="img recipe-img" alt="" />
+              <h5>Art forms</h5>
+              <p>
+                Tikuli is a type of hand painting and its history spread over 800
+                years. The painting with its modern evolution and varied
+                manifestations, find its origin in Patna, Bihar.
+              </p>
+            </a>
+            <a href="language.html" class="recipe">
+              <img src="./assets/language.jpg" class="img recipe-img" alt="" />
+              <h5>Language</h5>
+              <p>
+                There are many languages spoken in Bihar.Out of all chief among
+                them are Bhojpuri, spoken in the west of the state, Maithili in
+                the north, and Magahi in the south..
+              </p>
+            </a>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">अपना Bihar</span> Made by Sakshi
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
